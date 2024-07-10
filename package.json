@@ -2,10 +2,11 @@
   "name": "w1-text-analyzer",
   "version": "1.0.0",
   "description": "",
-  "main": "./js/index.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "build": "tsc",
+    "build:dev": "tsc -w",
     "start": "serve public"
   },
   "keywords": [],
