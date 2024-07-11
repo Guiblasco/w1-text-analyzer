@@ -2,6 +2,7 @@ import { countWords } from "../../analytics/index.js";
 
 const test1 = (): void => {
   console.log("countWords function case 0");
+
   const word = "";
   const wordsCount = countWords(word);
   const expectedReturnWord = 0;
@@ -19,6 +20,7 @@ const test1 = (): void => {
 
 const test2 = (): void => {
   console.log("countWords function case 3");
+
   const word = "hola como estas";
   const wordsCount = countWords(word);
   const expecedWord = 3;

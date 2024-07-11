@@ -13,7 +13,6 @@ const test1 = (): void => {
     return;
   } else {
     console.log("Test Failed");
-    console.log(getShortWords(shortWord));
 
     return;
   }
