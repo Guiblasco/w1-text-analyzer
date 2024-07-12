@@ -1,13 +1,13 @@
 import { countParagraphs } from "../../analytics/index.js";
 
 const test1 = (): void => {
-  console.log("countParagraph Function case 0");
+  console.log("Should be return 0 paragraph");
 
   const paragraph = "";
-  const paragracphsCount = countParagraphs(paragraph);
-  const expectedParagraph = 0;
+  const paragraphsCount = countParagraphs(paragraph);
+  const expectedResult = 0;
 
-  if (paragracphsCount === expectedParagraph) {
+  if (paragraphsCount === expectedResult) {
     console.log("Test Passed");
 
     return;
@@ -18,13 +18,13 @@ const test1 = (): void => {
   }
 };
 const test2 = (): void => {
-  console.log("countParagraph Function case 1");
+  console.log("Should be return 1 paragraph");
 
   const paragraph = "hola esto es un parrafo";
   const paragracphsCount = countParagraphs(paragraph);
-  const expectedParagraph = 1;
+  const expectedResult = 1;
 
-  if (paragracphsCount === expectedParagraph) {
+  if (paragracphsCount === expectedResult) {
     console.log("Test Passed");
 
     return;
@@ -35,7 +35,7 @@ const test2 = (): void => {
   }
 };
 const test3 = (): void => {
-  console.log("countParagraph Function case any");
+  console.log("Should be return number of paragraphs function is given");
 
   const paragraph = `hola estos es un parrafo
   
@@ -43,9 +43,9 @@ const test3 = (): void => {
   
   y este es otro`;
   const paragracphsCount = countParagraphs(paragraph);
-  const expectedParagraph = 3;
+  const expectedResult = 3;
 
-  if (paragracphsCount === expectedParagraph) {
+  if (paragracphsCount === expectedResult) {
     console.log("Test Passed");
 
     return;
