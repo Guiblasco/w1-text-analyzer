@@ -43,3 +43,18 @@ export const listShortWords = (text: string): string => {
     .filter((shortWord) => shortWord.length <= lengthWord);
   return listWords.join(",");
 };
+export const isPalindrome = (text: string): boolean => {
+  const emptyString = "";
+
+  if (text === emptyString) {
+    return false;
+  }
+  const splitedPhrase = text.split(" ").join("").toLocaleLowerCase();
+  const splitedReversePhrase = splitedPhrase
+    .split("")
+    .reverse()
+    .join("")
+    .toLocaleLowerCase();
+
+  return splitedPhrase === splitedReversePhrase ? true : false;
+};
