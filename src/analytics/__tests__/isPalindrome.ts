@@ -5,7 +5,7 @@ const test1 = (): void => {
 
   const phrase = "";
   const possiblePalindrome = isPalindrome(phrase);
-  const expectedResult = false;
+  const expectedResult = "Isn't Palindrome";
 
   if (possiblePalindrome === expectedResult) {
     console.log("Test Passes");
@@ -22,7 +22,7 @@ const test2 = (): void => {
 
   const phrase = "racecar";
   const possiblePalindrome = isPalindrome(phrase);
-  const expectedResult = true;
+  const expectedResult = "Is Palindrome";
 
   if (possiblePalindrome === expectedResult) {
     console.log("Test Passes");
@@ -39,7 +39,7 @@ const test3 = (): void => {
 
   const phrase = "hola";
   const possiblePalindrome = isPalindrome(phrase);
-  const expectedResult = false;
+  const expectedResult = "Isn't Palindrome";
 
   if (possiblePalindrome === expectedResult) {
     console.log("Test Passes");
@@ -58,7 +58,7 @@ const test4 = (): void => {
 
   const phrase = "hola que tal";
   const possiblePalindrome = isPalindrome(phrase);
-  const expectedResult = false;
+  const expectedResult = "Isn't Palindrome";
 
   if (possiblePalindrome === expectedResult) {
     console.log("Test Passes");
@@ -75,7 +75,7 @@ const test5 = (): void => {
 
   const phrase = "anita lava la tina";
   const possiblePalindrome = isPalindrome(phrase);
-  const expectedResult = true;
+  const expectedResult = "Is gitPalindrome";
 
   if (possiblePalindrome === expectedResult) {
     console.log("Test Passes");
