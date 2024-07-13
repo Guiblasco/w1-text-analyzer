@@ -3,6 +3,7 @@ import {
   countParagraphs,
   countWords,
   getShortWords,
+  isPalindrome,
   listShortWords,
 } from "../analytics/index.js";
 
